@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner Pal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url(background.jpg)";>
+    <nav class="navbar-inverse" style="position: sticky; top: 0; z-index: 9999">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Todo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li class="links"onclick="goHome()"><a href="#welcome">Home</a></li>
+                <li class="links" onclick="goTodo()"><a href="#todo">Todo</a></li>
+                <li class="links" onclick="goCalander()"><a href="#calander">Calander</a></li>
+                <li class="links" onclick="goNotes()"><a href="#notes">Notes</a></li>
+                <li class="links" onclick="goContact()"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+    <li>My Todo</li>
+      </ul>
+</body>
+<script src="todo.js"></script>
+</html>

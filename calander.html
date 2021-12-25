@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner Pal</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url(background.jpg);">
+    <nav class="navbar-inverse" style="position: sticky; top: 0; z-index: 9999">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Calander</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="nav navbar-nav">
+                <li class="links"><a href="#welcome">Home</a></li>
+                <li class="links" onclick="goTodo()"><a href="#todo">Todo</a></li>
+                <li class="links" onclick="goCalander()"><a href="#calander">Calander</a></li>
+                <li class="links" onclick="goNotes()"><a href="#notes">Notes</a></li>
+                <li class="links" onclick="goContact()"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="calendar">
+          <div class="front">
+            <div class="current-date">
+              <h1 id="date"><script>
+                document.getElementById("date").innerHTML = Date();
+                </script></h1>
+              
+            </div>
+  
+            <div class="current-month">
+              <ul class="week-days">
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+                <li>SUN</li>
+              </ul>
+  
+              <div class="weeks">
+                <div class="first">
+                  <span class="last-month">28</span>
+                  <span class="last-month">29</span>
+                  <span class="last-month">30</span>
+                  <span class="last-month">31</span>
+                  <span>01</span>
+                  <span>02</span>
+                  <span>03</span>
+                </div>
+  
+                <div class="second">
+                  <span>04</span>
+                  <span>05</span>
+                  <span class="event">06</span>
+                  <span>07</span>
+                  <span>08</span>
+                  <span>09</span>
+                  <span>10</span>
+                </div>
+  
+                <div class="third">
+                  <span>11</span>
+                  <span>12</span>
+                  <span>13</span>
+                  <span>14</span>
+                  <span class="active">15</span>
+                  <span>16</span>
+                  <span>17</span>
+                </div>
+  
+                <div class="fourth">
+                  <span>18</span>
+                  <span>19</span>
+                  <span>20</span>
+                  <span>21</span>
+                  <span>22</span>
+                  <span>23</span>
+                  <span>24</span>
+                </div>
+  
+                <div class="fifth">
+                  <span>25</span>
+                  <span>26</span>
+                  <span>27</span>
+                  <span>28</span>
+                  <span>29</span>
+                  <span>30</span>
+                  <span>31</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+</body>
+<script src="calander.js"></script>
+</html>

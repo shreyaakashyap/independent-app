@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Planner Pal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-image: url(background.jpg);">
+        <nav class="navbar-inverse" style="position: sticky; top: 0; z-index: 9999">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Planner Pal</a>
+            </div>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="nav navbar-nav">
+                    <li class="links"><a href="#welcome">Home</a></li>
+                    <li class="links" onclick="goTodo()"><a href="#todo">Todo</a></li>
+                    <li class="links" onclick="goCalander()"><a href="#calander">Calander</a></li>
+                    <li class="links" onclick="goNotes()"><a href="#notes">Notes</a></li>
+                    <li class="links" onclick="goContact()"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="welcome">
+            <div class="date">
+                <p id="date" style="color: white; margin-right: 1400px;"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+            </div>
+            <h1 style="color: ghostwhite; font-style: inherit;">Welcome!</h1>
+            <br>
+            <br>
+            <p style="color: white; font-size: 15px;">
+                Welcome to Planner Pal!
+                Here you can plan your day with todos, calanders, and even notes.
+                <br> The todo's let you fill in your day with all sorts of plans for things like meetings or just some vacation planing.
+                <br> Our calander helps you in making many  intresting todo's and reminders but is locked for now <br>
+                And finally our notes they help you to jot down all your plans a bit. Enjoy!
+
+            </p>
+            <div class="Reminders" style="margin-left: 1500px ; padding-top: -1000px; color: white; ">
+               
+
+            </div>
+            <br>
+            <br>
+            
+            <span class="buttons">
+                <button class="btn btn-info" width="500" style="border-radius: 100px;" onclick="goTodo()"><div>
+                    <img src = "https://www.merseaislandlionsclub.com/wp-content/uploads/2017/04/clipboard-list-flat.png"><p>Todo</p> 
+                </div></button>
+
+                <button class="btn btn-info" width="10" style="border-radius: 100px;" onclick="goCalander()"><div>
+                    <img src = "https://fvm.ukim.edu.mk/vetnest-summerschool/wp-content/uploads/2018/11/calendars-icon.png"><p>Calander</p> 
+                </div></button>
+
+                <button class="btn btn-info" style="border-radius: 100px;"><div>
+                    <img src = "https://cdn3.iconfinder.com/data/icons/20-business-flat-icons-shadow/96/91-512.png" onclick="goNotes()" width="259"><p>Notes</p> 
+                </div></button>
+            </span>
+            
+        </section>
+    </body>
+    <script src="main.js"></script>
+</html>
